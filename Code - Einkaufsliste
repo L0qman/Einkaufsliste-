@@ -1,0 +1,30 @@
+einkaufsliste = []
+
+while True:
+    aktion = input("Möchtest du einen Artikel hinzufügen, entfernen oder die Liste anzeigen? (hinzufügen / entfernen / beenden)")
+
+    if aktion == "hinzufügen":
+        artikel = input("Welchen Artikel möchtest du hinzufügen? ")
+        einkaufsliste.append(artikel)
+        print("Artikel wurde hinzugefügt")
+
+    elif aktion == "entfernen":
+        artikel = input("Welchen Artikel möchtest du entfernen? ")
+
+        if artikel in einkaufsliste:
+            einkaufsliste.remove(artikel)
+            print("Artikel wurde gelöscht")
+        else:
+            print("Den Artikel gibt es nicht!")
+
+    elif aktion == "anzeigen":
+        print("Deine Einkaufsliste")
+        print(einkaufsliste)
+
+
+    elif aktion == "beenden":
+        print("Einkaufsliste beendet")
+        break
+
+    else:
+        print("Ungültige Eingabe!")
