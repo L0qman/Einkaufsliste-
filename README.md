@@ -25,4 +25,4 @@ Das Programm fragt nach Eingaben, um die Einkaufsliste zu verwalten.
 
 ---
 
-*Dieses Projekt zeigt meine Lernfortschritte in Python und meine ersten Schritte in der Programmierung mit Benutzereingaben und Listen.*
+
